@@ -1,0 +1,107 @@
+.popup{
+ 
+    position: fixed;;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.667);
+    z-index:9999 ;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+
+    &__content{
+        
+        width: 55%;
+        height: 60vh;
+        background-color:rgb(255, 255, 255);
+        box-shadow: 0 0 5rem 1rem black;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        border-radius: .5rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img{
+        background-color: #ffae00;
+        height: 17rem;
+        display: inline-block;
+        width: 20rem;
+        margin: 1rem;
+        align-self: center;
+        border-radius: 0.2rem;
+
+    }
+
+    &__img > a {
+        position: relative;
+        font-weight: 800;
+        font-size: 2rem;
+        text-decoration: none;
+        top: 5rem;
+        color: #f5a201;
+    }
+
+    &__img-1,&__img-2{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.4s ease;   
+        box-shadow: 0 0.1rem 1.2rem 0.1rem #2726264a;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        cursor: pointer;
+        
+
+        &:hover{
+            transform: scale(1.05) ;
+            cursor: pointer;
+        }
+
+        &:active{
+            transform: scale(1) ;
+            cursor: pointer;
+        }
+    }
+
+    &__img-1{
+        background-image:url(/img/graphics-d.jpg);
+    }
+
+    &__img-2{
+        background-image:url(/img/web-dev.jpg);
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__close{
+        &:link,
+        &:visited{
+            color: black;
+            position: fixed;
+            top: -1.5rem;
+            right: 1.5rem;
+            font-size: 5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+        }
+    }
+
+    // &__title{
+    //     font-weight: 800;
+    //     font-size: 5rem;
+    //     background-color: teal;
+    // }
+
+}

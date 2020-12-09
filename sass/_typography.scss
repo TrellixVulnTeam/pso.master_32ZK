@@ -1,0 +1,102 @@
+.header-one{
+
+display: block;
+position: absolute;
+padding: 0rem 2rem;
+
+}
+.header__paragraph{
+    font-weight: 400;
+    animation-name: top;
+    animation-duration: 1s;
+}
+
+.content__title{
+    // color: #f5a201;
+    font-size: 1.7rem;
+    background-color: white;
+    margin: 0rem;
+    padding: 2rem;
+}
+.profile__title{
+    padding: 2.5rem;
+    font-size: 1.5rem;
+}
+.profile__text{
+    padding: 2rem;
+}
+
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+b{color: #f5a201;}
+.bold{
+    color: white;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h3{
+    margin: 0rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    margin: 0rem;
+    background-color: #f5a201;
+    border-top: black solid 0.01rem;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+    white-space: nowrap;
+
+    @media (max-width:600px){
+        display: flex;
+        flex-direction: column;
+        font-size: 4rem;
+      }
+
+      @media (max-width:375px){
+      
+        font-size: 2.5rem;
+      }
+    
+    .left {
+        animation-name: left;
+        animation-duration: 1s;
+       
+    }
+    .right {
+        animation-name: right;
+        animation-duration: 1s;
+       
+    }
+}
+
+@keyframes left {
+    from {margin-right: 40vw;}
+    to {margin-right: 0;}
+}
+
+@keyframes right {
+    from {margin-left: 40vw;}
+    to {margin-left: 0;}
+}
+
+@keyframes top {
+    from {margin-top: 50vh;}
+    to {margin-top: 0;}
+}
